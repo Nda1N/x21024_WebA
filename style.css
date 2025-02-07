@@ -40,7 +40,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80vw;  /* ビューポートの80% */
+    width: 90vw;  /* ビューポートの80% */
     height: auto;  /* 高さを自動調整 */
     z-index: 999;
 }
