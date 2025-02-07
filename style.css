@@ -34,15 +34,25 @@ body {
     text-align: center;
 }
 
-/* GIFポップアップ */
+/* GIFポップアップのスタイルを変更 */
 #gifPopup {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
+    width: 80vw;  /* ビューポートの80% */
+    max-width: 400px;  /* 最大幅を制限 */
+    height: auto;  /* 高さを自動調整 */
     z-index: 1000;
 }
+
+/* ポップアップ内の画像サイズを調整 */
+#popupGif {
+    width: 100%;  /* 親要素（#gifPopup）にフィット */
+    height: auto;  /* 縦横比を維持 */
+    display: block;
+}
+
 
 /* ×ボタンと①②ボタンをまとめる */
 #buttonContainer {
