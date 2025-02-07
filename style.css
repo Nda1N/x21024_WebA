@@ -18,6 +18,7 @@ body {
 }
 
 
+
 /* マーカー検出中ステータス */
 #markerStatus {
     position: fixed;
@@ -34,24 +35,16 @@ body {
     text-align: center;
 }
 
-/* GIFポップアップのスタイルを変更 */
+/* GIFポップアップ */
 #gifPopup {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90vw;  /* ビューポートの80% */
-    height: auto;  /* 高さを自動調整 */
-    z-index: 999;
+    display: none;
+    z-index: 1000;
+    width: 90vw;
 }
-
-/* ポップアップ内の画像サイズを調整 */
-#popupGif {
-    width: 100%;  /* 親要素（#gifPopup）にフィット */
-    height: auto;  /* 縦横比を維持 */
-    display: block;
-}
-
 
 /* ×ボタンと①②ボタンをまとめる */
 #buttonContainer {
